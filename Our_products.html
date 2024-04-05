@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./CSS/ourproducts.css">
+
+    <script src="./JAVASCRIPT/Home.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="icon" href="./ASSETS/icon_final.png" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/HeaderNew.css">
+
+    <title>Blog</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+            <div class="header_top middle">
+                <img class="IndexLogo" src="./ASSETS/AELOGO_FINAL.png" alt="Logo" />
+            </div>
+            <div class="header_navbar">
+                <button class="menuButton" onclick="MenuDisplayToggle()" id="menuButton">Menu <i
+                        class="fa-solid fa-caret-down"></i></button>
+                <div class="header_bottom" id="Menu">
+                    <nav class="SubNavBar">
+                        <a class="HomeAnchor" href="home.html">Home <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/></svg></a>
+                        <a class="CultivateAnchor" href="Who we are.html">Who we are <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/></svg> </a>
+                        <a href="our_vision.html">Our Vision<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/></svg> </a>
+                        <a href="Our_products.html">Our Products<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/> </svg> </a>
+                        <a href="Know_about_bamboo.html">Know About bamboo <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/></svg></a>
+                        <a href="cultivate_Bamboo.html">Cultivate Bamboo <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/></svg></a>
+                        <a href="Grow_Bamboo_withus.html">Grow Bamboo with us <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/></svg></a>
+                        <a href="advisory_comittee_members.html">Advisory Committe Members <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/></svg> </a>
+                        <a href="faq.html">FAQ <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/></svg></a>
+                        <a href="contact.html">Contact Us <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/></svg> </a>
+                      </nav> 
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+
+    <script>
+        function MenuDisplayToggle() {
+            let menu = document.getElementById("Menu");
+            if (document.getElementById("Menu").style.display === "none" || document.getElementById("Menu").style.display === "") {
+                document.getElementById("Menu").style.display = "block";
+            }
+            else {
+                document.getElementById("Menu").style.display = "none";
+            }
+
+        }
+    </script>
+
+
+    <!-- <section>
+        <div class="blog-sec-1">
+            <img src="../ASSETS/blog-4.jpg" alt="">
+            <img src="../ASSETS/blog-5.jpg" alt="">
+            <img src="../ASSETS/blog-6.jpg" alt="">
+            <img src="../ASSETS/blog-7.png" alt="">
+
+        </div>
+    </section> -->
+    <!--                 
+<section>
+    <h1 class="gallery-heading">Gallery of Some bamboo Products.</h1>
+    <br>
+    <div class="gallery-container">
+       <div class="gallery">
+          <div class="gallery-item">
+             <img src="./ASSETS/product1.jpg" alt="Image 1">
+             <div class="item-name">Bamboo basket</div>
+          </div>
+          <div class="gallery-item">
+             <img src="./ASSETS/product2.jpg" alt="Image 2">
+             <div class="item-name">Cooking Utensils</div>
+          </div>
+          <div class="gallery-item">
+             <img src="./ASSETS/product3.webp" alt="Image 3">
+             <div class="item-name">Single-Cot Bed</div>
+          </div>
+          <div class="gallery-item">
+             <img src="./ASSETS/product4.jpeg" alt="Image 4">
+             <div class="item-name">Momo's Basket</div>
+          </div>
+          <div class="gallery-item">
+             <img src="./ASSETS/product5.webp" alt="Image 4">
+             <div class="item-name">Mobile Holder</div>
+          </div>
+          <div class="gallery-item">
+             <img src="./ASSETS/product6.jpg" alt="Image 4">
+             <div class="item-name">Cloth Clips</div>
+          </div>
+          <div class="gallery-item">
+             <img src="./ASSETS/product7.jpg" alt="Image 4">
+             <div class="item-name">Chair</div>
+          </div>
+          <div class="gallery-item">
+             <img src="./ASSETS/product8.jpeg" alt="Image 4">
+             <div class="item-name">Grooming kit</div>
+          </div>
+          <div class="gallery-item">
+             <img src="./ASSETS/product9.jpeg" alt="Image 4">
+             <div class="item-name">Glass and Straw</div>
+          </div>
+          <div class="gallery-item">
+             <img src="./ASSETS/product10.webp" alt="Image 4">
+             <div class="item-name">Water Bottle</div>
+          </div>
+          <div class="gallery-item">
+             <img src="./ASSETS/product11.jpg" alt="Image 4">
+             <div class="item-name">Tooth Brushes</div>
+          </div>
+          <div class="gallery-item">
+             <img src="./ASSETS/product12.webp" alt="Image 4">
+             <div class="item-name">Hair Brush</div>
+          </div>
+          <div class="gallery-item">
+             <img src="./ASSETS/product13.webp" alt="Image 4">
+             <div class="item-name">Coffee Sipper</div>
+          </div>
+          <div class="gallery-item">
+             <img src="./ASSETS/product14.jpg" alt="Image 4">
+             <div class="item-name">Pens Holder</div>
+          </div>
+          <div class="gallery-item">
+             <img src="./ASSETS/product15.webp" alt="Image 4">
+             <div class="item-name">Soap box</div>
+          </div>
+          <div class="gallery-item">
+             <img src="./ASSETS/product16.jpg" alt="Image 4">
+             <div class="item-name">Bamboo Craft Items </div>
+          </div>
+          <div class="gallery-item">
+            <img src="./ASSETS/product26.jpg" alt="Image 4">
+            <div class="item-name">Bamboo Fabric</div>
+         </div>
+         <div class="gallery-item">
+            <img src="./ASSETS/product24.jpg" alt="Image 4">
+            <div class="item-name">Bath Essentials</div>
+         </div>
+         <div class="gallery-item">
+            <img src="./ASSETS/product23.jpg" alt="Image 4">
+            <div class="item-name">Grooming</div>
+         </div>
+         <div class="gallery-item">
+            <img src="./ASSETS/product22.jpg" alt="Image 4">
+            <div class="item-name">Bamboo Craft Items </div>
+         </div>
+       </div>
+    </div>
+ </section>
+ -->
+
+ <section class="blog-three">
+    <div class="section-3-col1">
+
+        <h3>BIOCHAR MADE OUT OF BAMBOO</h3>
+        <img src="../ASSETS/blog-5.jpg" alt="">
+
+            <span class="point1">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Biochar is a carbon-rich material produced from the thermal decomposition of organic biomass in a low-oxygen environment, often used as a soil amendment to enhance fertility and sequester carbon. Biochar is having innumerable uses in pharma, construction, cosmetic, chemical, infra etc sectors. It is a new compound yet to explore in many sectors. 
+                Biochar is produced through the pyrolysis of organic materials of biomass such as farm residues, farm waste, crop residues, forest waste, bamboo etc., in a low-oxygen environment.
+                 <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;The process of making biochar involves heating the organic material to high temperatures, typically between 400°C to 700°C, in a process called pyrolysis. During this process, volatile gases and liquids are driven off, leaving behind a carbon-rich solid residue which is the biochar. 
+                When bamboo is used as the feedstock for biochar production, it offers several advantages and benefits. </p> <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;To produce one ton of biochar it needs four tons of bamboo as feedstock. 
+                In first phase, AEPL is proposing to establish Biochar producing unit with a capacity of 20 tons/day in each and every Bamboo cluster, where Bamboo plantation is more than 500 acres. Arable Earth is bringing latest European technology for the production of biochar. </p>
+            </span>
+        </h4>
+        <h3>PELLETS MADE OUT OF BAMBOO</h3>
+
+        <img src="../ASSETS/blog-7.png" alt="">
+
+            <span class="point1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Bamboo pellets are a type of biofuel made from compressed bamboo biomass.
+                 They are used as a renewable and eco-friendly alternative to traditional fossil fuels like coal, petrol, diesel and natural gas.
+                  Bamboo is an attractive source for pellets due to its rapid growth, high energy content and sustainability. The process of making bamboo pellets involves several steps.
+                   Overall, bamboo pellets offer a promising and environmentally friendly solution for energy needs, particularly in regions where bamboo is abundant.
+                 <p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;They contribute to reducing the dependency on fossil fuels and help combat climate change.
+                In first phase, AEPL is proposing to establish pellets producing unit with a capacity of 80 tons/day in each and every Bamboo cluster, where Bamboo plantation is more than 500 acres. Arable Earth is bringing latest production technology for the production of high-quality pellets. To produce one ton of pellets we need one ton of bamboo as feedstock. </p>
+                    
+                </span>
+        </h4>
+        <h3>BRIQUETTES MADE OUT OF BAMBOO</h3>
+
+        <img src="../ASSETS/blog-4.jpg" alt="">
+        
+            <span class="point1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Bamboo briquettes are also a type of biofuel made from compressed bamboo biomass.
+                 They are used as a renewable and eco-friendly alternative to traditional fossil fuels like coal, petrol, diesel and natural gas.
+                 <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  When using bamboo briquettes, it is important to consider factors such as proper storage to maintain their quality, 
+                    the type of stove or equipment they are used in, and any regulations or guidelines related to their use in your region.
+                Bamboo briquettes can be a promising solution for sustainable energy and fuel needs, offering an environmentally friendly alternative to conventional options.</p>
+                <p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;If you're considering using bamboo briquettes, it is a good idea to research local suppliers, learn about their production process and understand how they can best be integrated into your specific use cases.
+                In first phase, AEPL is proposing to establish briquettes producing unit with a capacity of 80 tons/day in each and every Bamboo cluster, where Bamboo plantation is 500 acres. </p>
+               <p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Arable Earth is bringing latest technology for the production briquettes. To produce one ton of briquettes we need one ton of bamboo as feedstock. </p>
+                </span>
+                </div></section>
+
+
+
+    <footer>
+        <section class="footer">
+            <div class="row">
+                <!-- <div class="col-12 col-md-2 footerColNone">
+    
+            <div class="d-flex justify-content-center">
+            <img src="./ASSETS/final.png" class="footer-logo"></div>
+    
+            <p class="ofc2">At ARABLE EARTH, we lead bamboo cultivation and eco-product innovation,
+               fostering sustainability, community.</p>
+    
+    
+    
+        </div> -->
+                <div class="col-12 col-md-4 col-lg-3">
+                    <h4 class="p-0">Company</h4>
+                    <ul class="p-0">
+                        <li><a href="our_vision.html">about Us</a></li>
+                        <li><a href="invest1.html">Invest in Bamboo</a></li>
+                        <li><a href="about_bamboo.html">About Bamboo</a></li>
+                        <li><a href="cultivate.html">Cultivate Bamboo</a></li>
+                        <li><a href="contact.html">contact us</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <h4 class="p-0">Get Help</h4>
+                    <ul class="p-0">
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="founder.html">Meet The Founder</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="promote.html">Promote Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+
+
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3">
+                    <p class="address1 p-0">Address</p>
+                    <p class="adrs p-0"> Office address :<br> Arable Earth private Limited<br>
+                        G-02-03, Ground Floor, Shangrila Plaza, Banjara Hills
+                        <br>Road no-2, Hyderabad - 500034<br><br><br>
+
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-3 p-2">
+
+                    <div class="social-links">
+                        <a href="https://youtube.com/@ARABLEEARTHPVTLTD?si=dNsqFv1y-ZSAzpbf" target="_blank"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/arableearthpvtltd/?utm_source=qr&igsh=MXIweHBxaG93cWs0YQ%3D%3D"
+                            target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/arable-earth-pvt-ltd/about/" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/i/flow/login" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+
+                </div>
+            </div>
+
+            <hr>
+            <p class="copyrights">© ARABLEEARTH 2023.All Rights Reserved.</p>
+
+        </section>
+    </footer>
+
+
+    <!-- FOOTER END -->
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script src="contact.js"></script>
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

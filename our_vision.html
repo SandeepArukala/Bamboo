@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bamboo-About Us</title>
+    <link rel="stylesheet" href="./CSS/our vision.css">
+    <link rel="stylesheet" href="./CSS/bambooheader.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="./ASSETS/icon_final.png" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/HeaderNew.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+            <div class="header_top middle">
+                <img class="IndexLogo" src="./ASSETS/AELOGO_FINAL.png" alt="Logo" />
+            </div>
+            <div class="header_navbar">
+                <button class="menuButton" onclick="MenuDisplayToggle()" id="menuButton">Menu <i
+                        class="fa-solid fa-caret-down"></i></button>
+                <div class="header_bottom" id="Menu">
+                    <nav class="SubNavBar">
+                        <a class="HomeAnchor" href="home.html">Home <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/></svg></a>
+                        <a class="CultivateAnchor" href="Who we are.html">Who we are <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/></svg> </a>
+                        <a href="our_vision.html">Our Vision<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/></svg> </a>
+                        <a href="Our_products.html">Our Products<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/> </svg> </a>
+                        <a href="Know_about_bamboo.html">Know About bamboo <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/></svg></a>
+                        <a href="cultivate_Bamboo.html">Cultivate Bamboo <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/></svg></a>
+                        <a href="Grow_Bamboo_withus.html">Grow Bamboo with us <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/></svg></a>
+                        <a href="advisory_comittee_members.html">Advisory Committe Members <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/></svg> </a>
+                        <a href="faq.html">FAQ <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/></svg></a>
+                        <a href="contact.html">Contact Us <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/></svg> </a>
+                      </nav> 
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+
+    <script>
+        function MenuDisplayToggle() {
+            let menu = document.getElementById("Menu");
+            if (document.getElementById("Menu").style.display === "none" || document.getElementById("Menu").style.display === "") {
+                document.getElementById("Menu").style.display = "block";
+            }
+            else {
+                document.getElementById("Menu").style.display = "none";
+            }
+
+        }
+    </script>
+
+
+
+
+
+    
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-12 col-lg-6">
+                <img src="./ASSETS/graph.jpg" class="logo_v" alt="" />
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="Replace">
+                    <h1 class="head"> OUR MISSION</h1>
+                    <p class="para">Our team at ARABLE EARTH is to be the leading platform for bamboo
+                        cultivation and bamboo products. Promoting sustainable living, environmental
+                        conservation, and economic empowerment by using bamboo as the product. We aim
+                        to raise awareness about the benefits of bamboo, foster a community of bamboo
+                        enthusiasts, and provide a one-stop destination for high-quality, eco-friendly bamboo
+                        products. At present we are having working plans for Karnataka, Telangana and
+                        Andhra Pradesh.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-3 mb-3">
+        <h1 class="heading">Core Values</h1>
+
+
+        <div class="row">
+
+            <div class="col-12 col-md-4 col-lg-4 contiane">
+                <div class="box1">
+                    <h1>Sustainability</h1>
+                    <p>We are committed to promoting sustainable practices throughout the
+                        bamboo industry. We strive to showcase products that are ethically sourced, crafted,
+                        and delivered, ensuring minimal impact on the environment</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4 ">
+                <div class="box1">
+
+                    <h1>Quality</h1>
+                    <p>We believe in the inherent qualities of bamboo and are dedicated to offering
+                        products that meet the highest standards of quality, durability, and aesthetics. We
+                        carefully curate our product selection to ensure customer satisfaction.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4">
+                <div class="box1">
+
+                    <h1>Community</h1>
+                    <p>We aim to build a vibrant community of bamboo enthusiasts, artisans,
+                        and environmentally-conscious individuals. We encourage knowledge-sharing,
+                        collaboration, and meaningful connections to foster a sense of belonging and purpose.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container-fluid pt-3 mt-3 mb-3">
+        <div class="row">
+            <div class="col-12 col-lg-6 color mt-2">
+                <div class="Replace">
+                    <h1 class="head1">OUR VISION</h1>
+                    <p class="para1">
+                        Our vision is to create a world where bamboo is recognised as a vital
+                        resource for a sustainable future. We aspire to be the go-to platform for individuals,
+                        businesses, and organisations seeking information, inspiration, and access to a wide
+                        range of bamboo products. By championing the use of bamboo and supporting
+                        responsible sourcing and manufacturing practices, we envision a greener and more
+                        prosperous planet for generations to come.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 color mt-2">
+
+                <img src="./ASSETS/office2.webp" class="logo1" alt="" />
+
+
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-12 col-md-4 col-lg-4">
+
+                <div class="box1">
+
+                    <h1>Empowerment</h1>
+                    <p>We support and empower local communities engaged in bamboo
+                        cultivation and product manufacturing. By promoting fair trade practices, we
+                        contribute to the economic well-being of bamboo-dependent communities.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4">
+                <div class="box1">
+
+                    <h1>Education</h1>
+                    <p>We strive to be a reliable source of information on bamboo - its benefits,
+                        cultivation, processing, and diverse applications. We aim to educate our audience on
+                        the positive impact of bamboo products on the environment and society</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4">
+                <div class="box1">
+
+                    <h1>Innovation</h1>
+                    <p> We embrace innovation and creativity in the bamboo industry. We seek
+                        out cutting-edge bamboo technologies and novel product designs to stay at the
+                        forefront of the market.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Videos Section -->
+    <h2 class="heading">VIDEOS</h2>
+    <div class="row m-0">
+        <div class="col-12 col-sm-6 col-lg-6">
+            <div class="card m-3 text-center">
+                <div class="card-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/crljkPLG_Ag?rel=0"
+                            allowfullscreen></iframe>
+                    </div>
+                    <h5 class="card-title">Bamboo Growth</h5>
+                    <p class="card-text">Bamboo has an amazing growth rate. It is much like a telescope in its growth
+                        habit as it emerges. Its growth has been measured at almost 4 feet in a 24 hour period during
+                        the Spring shooting period. When the new shoot reaches its height, it will unfold its branches
+                        and new leaves.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-6">
+            <div class="card m-3 text-center">
+                <div class="card-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/M62pyFkTWbg?rel=0"
+                            allowfullscreen></iframe>
+                    </div>
+                    <h5 class="card-title">Types of bamboo</h5>
+                    <p class="card-text">Bamboo species can be divided into two groups: sympodial (clumping) and
+                        monopodial (running) species. Sympodial species grow from the soil in a slowly expanding tuft,
+                        while monopodial species send underground rhizomes to produce shoots several metres from the
+                        original.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row m-0">
+        <div class="col-12 col-sm-6 col-lg-6">
+            <div class="card m-3 text-center">
+                <div class="card-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0GvRRi8AADU?rel=0"
+                            allowfullscreen></iframe>
+                    </div>
+                    <h5 class="card-title">Bamboo bussiness ideas</h5>
+                    <p class="card-text">It can make great profits selling directly to landscapers. They have to get
+                        their bamboo from somewhere, so why not your backyard nursery? Landscapers and commercial
+                        gardeners often buy their plants in large quantities, and when they find a business they like,
+                        they'll continue to buy more and more plants.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-6">
+            <div class="card m-3 text-center">
+                <div class="card-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LTejJnrzGPM?rel=0"
+                            allowfullscreen></iframe>
+                    </div>
+                    <h5 class="card-title">Bamboo Furniture Making</h5>
+                    <p class="card-text">The manufacturing process includes the following steps: selecting bamboos,
+                        breaking though bamboo joints, conducting carbonization and stewing, straightening, polishing,
+                        conducting purification with water, wiping to be dry, conducting stoving at the low temperature,
+                        conducting molding machining, polishing. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="container_1">
+        <div class="heading_1">
+            <h1>About Us</h1>
+            <p>Arable Earth Pvt Ltd. (AEPL)</p>
+        </div>
+        <div class="wall">
+            <div class="row m-0">
+                <img class="bannerImg" src="./ASSETS/ourvision-bg.png" />
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container_2">
+            <h1>About AEPL</h1>
+            <P>Arable Earth Pvt Ltd., is a new startup, established to venture in agriculture sector. It is promoted by
+                a
+                team of two entrepreneurs who are having expertise of 30 years in their domains. They are having
+                experience in agriculture and its allied activates.Undertaking large scale commercial and industrial
+                plantations in private partnership and establishing
+                value adding processing units for end agri produce is the business model of Arable Earth Pvt Ltd.
+                The team established AEPL to explore various opportunities in agri sector both locally and
+                internationally. AEPL is proposing to open a office in Dubai in 2026 to explore agri business
+                opportunities in Africa. Presently we identified two primary crops to explore. Bamboo is first one.
+                Jackfruit is second one.
+                First two years we are focusing on Bamboo. Proposing to establish a Biochar unit with 120 tons/day
+                production by processing 500 tons of bamboo with latest technology available. AEPL is in talks with to
+                Indian & European companies for technology transfers for production of Biochar and to make organic
+                manures fortified by Biochar.In first phase proposing to establish bamboo plantation 317 acres of land
+                at Chincholi in Gulbarga
+                district in Karnataka. In two years proposing to expand bamboo plantation in 2,000 acres.</P>
+
+        </div>
+    </section>
+    <!-- <section class="container_background">
+        <h1>Directors of AEPL</h1>
+        <div class="container_3">
+                <div class="container_3-col_1">
+                    <img class="founderImgs" src="./ASSETS/md_pic.jpg">
+                    <h2> Mr. TSB Venkat Reddy-Managing Director</h2>
+                    <p></p>
+                </div>
+                <div class="container_3-col_2">
+                    <img class="founderImgs" src="./ASSETS/director_pic.jpg">
+                    <h2>Mr. N. Raghu Ram -Director - Agriculture</h2>
+                    <p>  </p>
+                </div>
+            </div>
+            
+
+    </section> -->
+
+
+
+    <!-- Footer -->
+
+    <footer>
+        <section class="footer">
+            <div class="row m-0">
+                <!-- <div class="col-12 col-md-2 footerColNone">
+    
+            <div class="d-flex justify-content-center">
+            <img src="./ASSETS/final.png" class="footer-logo"></div>
+            <p class="ofc2">At ARABLE EARTH, we lead bamboo cultivation and eco-product innovation,
+               fostering sustainability, community.</p>
+    
+    
+    
+        </div> -->
+                <div class="col-12 col-md-4 col-lg-3">
+                    <h4>Company</h4>
+                    <ul class="p-0">
+                        <li><a href="our_vision.html">about Us</a></li>
+                        <li><a href="invest.html">Invest in Bamboo</a></li>
+                        <li><a href="about_bamboo.html">About Bamboo</a></li>
+                        <li><a href="cultivate.html">Cultivate Bamboo</a></li>
+                        <li><a href="contact.html">contact us</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <h4>Get Help</h4>
+                    <ul class="p-0">
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="founder.html">Meet The Founder</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="promote.html">Promote Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul><br><br>
+
+
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3">
+                    <h4>Address</h4>
+                    <p class="adrs"> Office address :<br> Arable Earth private Limited
+                        G-02-03, Ground Floor, Shangrila Plaza, Banjara Hills
+                        <br>Road no-2, Hyderabad - 500034<br><br><br>
+
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-3 p-2">
+
+                    <div class="social-links">
+                        <a href="https://youtube.com/@ARABLEEARTHPVTLTD?si=dNsqFv1y-ZSAzpbf" target="_blank"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/arableearthpvtltd/?utm_source=qr&igsh=MXIweHBxaG93cWs0YQ%3D%3D"
+                            target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/arable-earth-pvt-ltd/about/" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/i/flow/login" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+
+                </div>
+            </div>
+
+            <hr>
+            <p class="copyrights">© ARABLEEARTH 2023.All Rights Reserved.</p>
+
+        </section>
+    </footer>
+
+
+
+    <!-- FOOTER END -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script src="contact.js"></script>
+
+
+
+
+
+</body>
+
+
+
+</html>

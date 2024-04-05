@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+
+    <link rel="stylesheet" href="./CSS/contact.css">
+    <link rel="stylesheet" href="./CSS/bambooheader.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <link rel="icon" href="./ASSETS/icon_final.png" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/HeaderNew.css">
+
+</head>
+
+<body>
+    <!-- / Header Start / -->
+
+
+    <header>
+        <div class="header">
+            <div class="header_top middle">
+                <img class="IndexLogo" src="./ASSETS/AELOGO_FINAL.png" alt="Logo" />
+            </div>
+            <div class="header_navbar">
+                <button class="menuButton" onclick="MenuDisplayToggle()" id="menuButton">Menu <i
+                        class="fa-solid fa-caret-down"></i></button>
+                <div class="header_bottom" id="Menu">
+                    <nav class="SubNavBar">
+                        <a class="HomeAnchor" href="home.html">Home <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/></svg></a>
+                        <a class="CultivateAnchor" href="Who we are.html">Who we are <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/></svg> </a>
+                        <a href="our_vision.html">Our Vision<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/></svg> </a>
+                        <a href="Our_products.html">Our Products<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/> </svg> </a>
+                        <a href="Know_about_bamboo.html">Know About bamboo <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/></svg></a>
+                        <a href="cultivate_Bamboo.html">Cultivate Bamboo <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/></svg></a>
+                        <a href="Grow_Bamboo_withus.html">Grow Bamboo with us <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/></svg></a>
+                        <a href="advisory_comittee_members.html">Advisory Committe Members <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/></svg> </a>
+                        <a href="faq.html">FAQ <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/></svg></a>
+                        <a href="contact.html">Contact Us <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/></svg> </a>
+                      </nav> 
+
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+
+    <script>
+        function MenuDisplayToggle() {
+            let menu = document.getElementById("Menu");
+            if (document.getElementById("Menu").style.display === "none" || document.getElementById("Menu").style.display === "") {
+                document.getElementById("Menu").style.display = "block";
+                document.getElementsByClassName("selected-option")[0].style.zIndex = "-1";
+            }
+            else {
+                document.getElementById("Menu").style.display = "none";
+                document.getElementsByClassName("selected-option")[0].style.zIndex = "0";
+            }
+
+        }
+    </script>
+    <!-- / Header End / -->
+
+    <section>
+        <!-- <section class="header2">
+       
+        <div class="single">
+            <img src="./ASSETS/cu.avif">
+         </div>
+
+    
+</div>      
+</section>   -->
+        <section>
+            <div class="container-fluid">
+                <div class="row text-center">
+                    <h2>DROP US AN E-MAIL.</h2>
+
+                </div>
+            </div>
+        </section>
+
+        <section>
+
+            <div class="contactform">
+                <div class="outerdiv">
+                    <div class="contact">
+                        <!-- <h2>Contact Us</h2> -->
+                        <form action="#">
+
+                            <div class="row m-0">
+                                <div class="col-sm-12">
+
+                                    <div class="input-box">
+                                        <div class="input-field field">
+                                            <input type="text" placeholder="Full Name" id="name1" class="item"
+                                                autocompleate="off">
+                                            <div class="error-txt name1">Full Name Can't be Blank</div>
+                                        </div>
+
+                                        <div class="input-field field">
+                                            <input type="text" placeholder="Email Address" id="email" class="item"
+                                                autocompleate="off">
+                                            <div class="error-txt email">Enter a Valid Email Address</div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="input-box">
+                                        <div class="input-field field">
+
+                                            <div class="select-box">
+                                                <div class="selected-option">
+                                                    <div class="flag">
+                                                        <span class="iconify"
+                                                            data-icon="emojione-v1:flag-for-india"></span>
+                                                        <strong id="countryCode">+91</strong>
+                                                    </div>
+                                                    <input type="tel" name="tel" id="phone" class="item"
+                                                        pattern="[0-9]{10}" maxlength="10" placeholder="Enter number"
+                                                        required>
+                                                </div>
+                                                <div class="options">
+                                                    <input type="text" class="search-box"
+                                                        placeholder="Search Country Name">
+                                                    <ol>
+                                                    </ol>
+                                                </div>
+                                            </div>
+
+                                            <div class="error-txt phone">Enter a Valid Phone Number</div>
+
+
+                                        </div>
+
+
+                                        <div class="input-field field">
+                                            <input type="text" placeholder="Subject" id="subject" class="item"
+                                                autocompleate="off">
+                                            <div class="error-txt">Subject Can't be Blank</div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="textarea-field field">
+                                        <textarea name="" id="message" cols="20" rows="10" placeholder="Your Message: "
+                                            class="item" autocompleate="off"></textarea>
+                                        <div class="error-txt">Meassage Can't be Blank</div>
+
+                                    </div>
+                                    <!-- <button type="submit" >Send Message</button> -->
+                                    <a href="contact.html"><button class="name">Send Message</button></a>
+
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 
+<section>
+
+<div class="imagescol">
+    <div class="row">
+        <div class="col-sm-4">
+            <img src="sudden_9.jpg">            
+        </div>
+
+        <div class="col-sm-4">
+            <img src="stage3.jpg">            
+        </div>
+
+        <div class="col-sm-4">
+            <img src="deforestation copy.jpg">            
+        </div>
+    </div>
+
+</div>
+
+</section> -->
+
+        <section>
+            <div class="row m-0">
+                <div class="col-sm-12 map">
+                    <div class="location">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2518.998587420277!2d78.41843695159956!3d17.425577734396885
+                !2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb912d3ddc2769%3A0xf9ef63ef54724ffe!2sShangrila%20Plaza!5e0!3m2!1sen!2s
+                in!4v1703680175064!5m2!1sen!2sin" width="100%" height="400vh" style="border:0;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Footer -->
+
+        <footer>
+            <section class="footer">
+                <div class="row m-0">
+                    <!-- <div class="col-12 col-md-2 footerColNone">
+    
+            <div class="d-flex justify-content-center">
+            <img src="./ASSETS/final.png" class="footer-logo"></div>
+    
+            <p class="ofc2">At ARABLE EARTH, we lead bamboo cultivation and eco-product innovation,
+               fostering sustainability, community.</p>
+    
+    
+    
+        </div> -->
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <h4>Company</h4>
+                        <ul class="p-0">
+                            <li><a href="our_vision.html">about Us</a></li>
+                            <li><a href="invest.html">Invest in Bamboo</a></li>
+                            <li><a href="about_bamboo.html">About Bamboo</a></li>
+                            <li><a href="cultivate.html">Cultivate Bamboo</a></li>
+                            <li><a href="contact.html">contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <h4>Get Help</h4>
+                        <ul class="p-0">
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="founder.html">Meet The Founder</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="promote.html">Promote Us</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul><br><br>
+
+
+                    </div>
+
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <h4>Address</h4>
+                        <p class="adrs"> Office address :<br> Arable Earth private Limited
+                            G-02-03, Ground Floor, Shangrila Plaza, Banjara Hills
+                            <br>Road no-2, Hyderabad - 500034<br><br><br>
+
+                        </p>
+                    </div>
+
+                    <div class="col-12 col-md-12 col-lg-3 p-2">
+
+                        <div class="social-links">
+                            <a href="https://youtube.com/@ARABLEEARTHPVTLTD?si=dNsqFv1y-ZSAzpbf" target="_blank"><i
+                                    class="fab fa-youtube"></i></a>
+                            <a href="https://www.instagram.com/arableearthpvtltd/?utm_source=qr&igsh=MXIweHBxaG93cWs0YQ%3D%3D"
+                                target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/arable-earth-pvt-ltd/about/" target="_blank"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/i/flow/login" target="_blank"><i
+                                    class="fab fa-twitter"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <hr>
+                <p class="copyrights">© ARABLEEARTH 2023.All Rights Reserved.</p>
+
+            </section>
+        </footer>
+
+
+        <!-- FOOTER END -->
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+        <script src="./JAVASCRIPT/contact.js"></script>
+
+
+
+
+
+</body>
+
+</html>

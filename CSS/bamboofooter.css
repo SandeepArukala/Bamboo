@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Poppins',sans-serif;
+}
+
+.footer{
+   
+    /* background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(footerbg); /
+   / padding:50px 10px 20px; */
+     background-image:url(../ASSETS/footerbg.jpg);
+    /*background-color: #3F5845; */
+}
+.footer .col-md-3{
+    padding-left: 10px;
+}
+.footer h4{
+    /* color:#fff; */
+    color:#24262b;
+    text-align: left;
+    margin-top:15px;
+    margin-bottom: 25px;
+}
+
+.footer h4::after{
+content:'';
+width: 0%;
+margin-bottom: -10px;
+height: 2px;
+/* background:#f44336; */
+display:inline-block;
+transition:0.5s;
+transform:translateX(-100%);
+}
+
+.footer h4:hover::after{
+        width: 30%;
+        transform:translateX(-100%);
+    
+}
+.footer ul li{
+    list-style: none;
+}
+.footer p{
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 2px;
+}
+.footer-logo{
+    width: 150px;
+    height: 90px;
+    padding-top: 0px;
+   padding-bottom: 5px;
+    justify-content: center;
+    
+ 
+}
+
+.footer ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    /* color: #ffffff; */
+    color:#24262b;
+    text-decoration: none;
+    font-weight: 600;
+    /* display: block; */
+    transition: all o.3s ease;
+    text-align: justify;
+}
+
+.footer ul li a:hover{
+    color:#d119af;
+}
+
+.footer .social-links a{
+    display: inline-block;
+    height: 40px;
+    width:40px;
+    background-color: black;
+    
+    
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50px;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.footer .social-links a:hover{
+    color: #e5e9f3;
+    background-color:#62b5ec;
+    
+}
+.social-links{
+    padding-top: 145px;
+    padding-left: 100px;
+}
+.ofc1{
+    font-size: 20px;
+}
+.footer hr{
+    margin-top:10px;
+    background:#fcfafa;
+    /* color: #efefef; */
+    color:#24262b;
+}
+.footer .copyrights{
+    text-align: center;
+    /*color: #efefef; */
+    color:#24262b;
+    font-size: 16px;
+    font-weight: 600;
+}
+@media screen and (max-width:600px){
+    .social-links{
+        padding-top: 0px !important;
+    }
+    .footerColNone{
+        display: none !important;
+    }
+    
+    }
+
+
+
+
+    

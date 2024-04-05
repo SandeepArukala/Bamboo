@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invest in bamboo</title>
+    <link rel="stylesheet" href="./CSS/invest.css">
+    <link rel="stylesheet" href="./CSS/bamboofooter.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="./JAVASCRIPT/Home.js"></script>
+    <link rel="icon" href="./ASSETS/icon_final.png" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/HeaderNew.css">
+</head>
+
+<body>
+
+
+
+    <header>
+        <div class="header">
+            <div class="header_top middle">
+                <img class="IndexLogo" src="./ASSETS/AELOGO_FINAL.png" alt="Logo" />
+            </div>
+            <div class="header_navbar">
+                <button class="menuButton" onclick="MenuDisplayToggle()" id="menuButton">Menu <i
+                        class="fa-solid fa-caret-down"></i></button>
+                <div class="header_bottom" id="Menu">
+                    <nav class="SubNavBar">
+                        <a class="HomeAnchor" href="home.html">Home <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/></svg></a>
+                        <a class="CultivateAnchor" href="Who we are.html">Who we are <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/></svg> </a>
+                        <a href="our_vision.html">Our Vision<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/></svg> </a>
+                        <a href="Our_products.html">Our Products<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/> </svg> </a>
+                        <a href="Know_about_bamboo.html">Know About bamboo <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/></svg></a>
+                        <a href="cultivate_Bamboo.html">Cultivate Bamboo <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/></svg></a>
+                        <a href="Grow_Bamboo_withus.html">Grow Bamboo with us <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/></svg></a>
+                        <a href="advisory_comittee_members.html">Advisory Committe Members <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/></svg> </a>
+                        <a href="faq.html">FAQ <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/></svg></a>
+                        <a href="contact.html">Contact Us <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/></svg> </a>
+                      </nav> 
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+
+    <script>
+        function MenuDisplayToggle() {
+            let menu = document.getElementById("Menu");
+            if (document.getElementById("Menu").style.display === "none" || document.getElementById("Menu").style.display === "") {
+                document.getElementById("Menu").style.display = "block";
+            }
+            else {
+                document.getElementById("Menu").style.display = "none";
+            }
+
+        }
+    </script>
+
+<!-- <div class="bg-color">
+    <h2><i class="fa-sharp fa-solid fa-rocket-launch"></i>Advisory Committee Member</h2>
+</div> -->
+
+<!-- About R.K.Mehta Section Start-->
+<section class="rkMehta">
+    <div class="imgContainer">
+        <img src="./ASSETS/R.K.Mehta.png" alt="error" width="250px" height="280px">
+        <div>
+            <h2>R.K.MEHTA</h2>
+            <p>
+                Mobile : +91 9848015828<br>
+                Email : rba1229.rkm2gmail.com<br>
+                Located : Gachibowli,Hyderabad
+            </p>
+        </div>
+    </div>
+    <div class="paraDiv">
+        <p>
+            <b>Mr. R.K.Mehta</b> is currently working as a Chairman of <b>Rainbow Bamboo Academy,</b> based at
+            Hyderabad.
+            This family sponsored NGO, is promoting Biochar & Bamboo sectors for the last two decades. The
+            other role of RBA is to train entrepreneurs and conduct skill development courses. RBA has very
+            good working relations with various R&D institutes engaged in development of products and processes
+            using bamboo as the major raw material. With passion and decades of extensive experience he is
+            serving many organizations as a chairman and an advisor & Mentor. He is also active key member
+            and administrator for Biochar Crusaders whatsup Group. He located at Gachibowli, Hyderabad and
+            proudly state that I am a KARMA YOUGI & enjoy working for 10 hours a day.
+        </p>
+    </div>
+</section>
+<!-- About R.K.Mehta Section End-->
+<!-- About R.K.Mehta Section CSS Start-->
+<style>
+    .bg-color {
+        justify-content: center;
+    }
+    .rkMehta {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 80px;
+        margin: 50px 0px;
+    }
+
+    .imgContainer img {
+        border-radius: 10px;
+    }
+
+    .imgContainer div {
+        margin: 10px;
+    }
+
+    .imgContainer div h2 {
+        color: red;
+    }
+
+    .paraDiv {
+        width: 50%;
+        line-height: 35px;
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    @media screen and (max-width: 1200px) {
+        .rkMehta {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .paraDiv {
+            width: 80%;
+
+        }
+    }
+</style>
+<!-- About R.K.Mehta Section CSS End-->
+
+
+
+
+    <!-- <div class="bg-image">
+        <div>
+            <h1 class="heading">Make Wealth by Investing in Bamboo</h1>
+        </div>
+
+        <div class=" row text-center mr-0 ml-0">
+            <div class="col-12 col-md-6 col-lg-3 position-static">
+                <div class="img2">
+                    <i class="fa  fas fa-globe"></i>
+                    <p class="para1">make impact</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 position-static">
+                <div class="img2">
+                    <i class="fa fas fa-leaf"></i>
+                    <p class="para1">green investment</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 position-static">
+                <div class="img2">
+                    <i class="fa fas fa-history"></i>
+                    <p class="para1">long-term revenues</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 position-static">
+                <div class="img2">
+                    <i class="fa fas fa-chart-line"></i>
+                    <p class="para1">high-return potential</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="shadow p-3 text-center mb-3">
+                        <img src="./ASSETS/ph1.png" class="image1" />
+                        <h1 class="heading1">phase1</h1>
+                        <p class="paragraph1">In Bamboo First 150 hectares in the Alcoutim region</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="shadow p-3 text-center mb-3">
+                        <img src="./ASSETS/ph2.png" class="image1" />
+                        <h1 class="heading1">phase2</h1>
+                        <p class="paragraph1">Expansion to 2000 hectares
+                            Set-up primary processing</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="shadow p-3 text-center mb-3">
+                        <img src="./ASSETS/ph3.png" class="image1" />
+                        <h1 class="heading1">phase3</h1>
+                        <p class="paragraph1">European regions
+                            Elaboration of processing the nature</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="container">
+                <div class="image">
+                    <img src="./ASSETS/investimage1.jpg" alt="Your Image">
+                </div>
+                <div class="content">
+                    <h2>Low Maintenance and High Yield </h2>
+                    <p>
+                        Bamboo is renowned for its rapid growth, with some species reaching impressive heights in a
+                        matter
+                        of weeks. This remarkable growth rate translates to a low-maintenance crop that demands minimal
+                        intervention, making it an ideal choice for both experienced farmers and those new to
+                        cultivation.
+                    </p>
+                    <p>
+                        Unlike many traditional crops, bamboo groves establish themselves with minimal effort and
+                        resources.
+                        Once planted, bamboo requires little in the way of pesticides, fertilizers, or water. This
+                        innate
+                        hardiness and resilience contribute to a low-cost, low-labor approach, ensuring that your
+                        investment
+                        of time and resources remains at a minimum.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="container2">
+                <div class="content2">
+                    <h2>Global Market Demand </h2>
+
+                    <p>
+                        Bamboo, once regarded primarily as a traditional material, has emerged as a cornerstone in the
+                        pursuit of sustainable and eco-friendly solutions on a global scale. The increasing awareness of
+                        environmental issues, coupled with a growing preference for renewable resources, has
+                        significantly elevated the global market demand for bamboo. Here's an exploration of the factors
+                        driving this demand and the diverse applications fueling the bamboo revolution.
+                    </p>
+                    <p>
+                        Global market demand for bamboo is experiencing a transformative upswing, driven by a confluence
+                        of environmental consciousness, sustainability goals, and the versatility of this remarkable
+                        plant. As industries and consumers alike increasingly recognize the economic, social, and
+                        environmental benefits of bamboo, the trajectory of its demand is poised to continue its upward
+                        ascent, fostering a more sustainable and greener future for industries around the world.
+                    </p>
+                </div>
+
+                <div class="image">
+                    <img src="./ASSETS/investimage2.jpg" alt="Your Image">
+                </div>
+
+            </div>
+
+            <div class="container">
+
+                <div class="image">
+                    <img src="./ASSETS/investimage3.jpg" alt="Your Image">
+                </div>
+                <div class="content">
+                    <h2>Government Support and Policies </h2>
+                    <p>
+                        In India there has been an increased focus on promoting bamboo cultivation. Government policies
+                        and support programs may provide financial incentives, subsidies, and technical assistance to
+                        encourage investment in the bamboo sector.
+                    </p>
+                    <p>
+                        The National Bamboo Mission is a central government initiative aimed at promoting the holistic
+                        development of the bamboo sector. It focuses on the propagation of bamboo, livelihood generation
+                        for farmers, and fostering bamboo-based industries. The NBM provides financial assistance,
+                        technical support, and capacity building to enhance bamboo cultivation and value addition.
+                    </p>
+                </div>
+            </div>
+        </div> -->
+
+
+
+
+
+
+
+
+
+        <footer>
+            <section class="footer">
+                <div class="row m-0">
+                    <!-- <div class="col-12 col-md-2 footerColNone">
+                
+                        <div class="d-flex justify-content-center">
+                        <img src="./ASSETS/final.png" class="footer-logo"></div>
+                
+                        <p class="ofc2">At ARABLE EARTH, we lead bamboo cultivation and eco-product innovation,
+                           fostering sustainability, community.</p>
+                
+                
+                
+                    </div> -->
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="our_vision.html">about Us</a></li>
+                            <li><a href="invest.html">Invest in Bamboo</a></li>
+                            <li><a href="about_bamboo.html">About Bamboo</a></li>
+                            <li><a href="cultivate.html">Cultivate Bamboo</a></li>
+                            <li><a href="contact.html">contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <h4>Get Help</h4>
+                        <ul>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="founder.html">Meet The Founder</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="promote.html">Promote Us</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+
+
+                    </div>
+
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <h4>Address</h4>
+                        <p class="adrs"> Office address :<br> Arable Earth private Limited
+                            G-02-03, Ground Floor, Shangrila Plaza, Banjara Hills
+                            <br>Road no-2, Hyderabad - 500034<br><br><br>
+
+                        </p>
+                    </div>
+
+                    <div class="col-12 col-md-12 col-lg-3 p-2">
+
+                        <div class="social-links">
+                            <a href="https://youtube.com/@ARABLEEARTHPVTLTD?si=dNsqFv1y-ZSAzpbf" target="_blank"><i
+                                    class="fab fa-youtube"></i></a>
+                            <a href="https://www.instagram.com/arableearthpvtltd/?utm_source=qr&igsh=MXIweHBxaG93cWs0YQ%3D%3D"
+                                target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/arable-earth-pvt-ltd/about/" target="_blank"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/i/flow/login" target="_blank"><i
+                                    class="fab fa-twitter"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <hr>
+                <p class="copyrights">© ARABLEEARTH 2023.All Rights Reserved.</p>
+
+            </section>
+        </footer>
+
+
+
+
+</body>
+
+</html>

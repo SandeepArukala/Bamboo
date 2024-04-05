@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./CSS/HeaderNew.css">
+  <link rel="icon"
+    href="https://teams.live.com/l/message/19:KzOOfr5QG4xYfKkY6-vLaD8qSEnZGsrgTwL5ZCx0Ejk1@thread.v2/1704255508920?context=%7B%22contextType%22%3A%22chat%22%7D"
+    type="image/x-icon">
+
+  <!-- Google icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+  <title>Arable Earth</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-json/2.6.0/jquery.json.min.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./CSS/newhome.css">
+  <link rel="stylesheet" href="./CSS/Button.css">
+  <!-- <link rel="stylesheet" href="./CSS/bambooheader.css"> -->
+  <!-- <link rel="stylesheet" href="./CSS/newheader.css"> -->
+  <!-- <link rel="stylesheet" href="./CSS/scrollerhome.css"> -->
+  <link rel="stylesheet" href="./CSS/cultivation.css">
+
+  <script src="./JAVASCRIPT/Home.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <link rel="icon" href="./ASSETS/icon_final.png" type="image/x-icon">
+  <style>
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="header">
+      <div class="header_top middle">
+        <img class="IndexLogo" src="./ASSETS/AELOGO_FINAL.png" alt="Logo" />
+      </div>
+      <div class="header_navbar">
+        <button class="menuButton" onclick="MenuDisplayToggle()" id="menuButton">Menu <i
+            class="fa-solid fa-caret-down"></i></button>
+        <div class="header_bottom" id="Menu">
+          <nav class="SubNavBar">
+            <a class="HomeAnchor" href="home.html">Home <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/></svg></a>
+            <a class="CultivateAnchor" href="Who we are.html">Who we are <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/></svg> </a>
+            <a href="our_vision.html">Our Vision<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/></svg> </a>
+            <a href="Our_products.html">Our Products<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/> </svg> </a>
+            <a href="Know_about_bamboo.html">Know About bamboo <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/></svg></a>
+            <a href="cultivate_Bamboo.html">Cultivate Bamboo <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/></svg></a>
+            <a href="Grow_Bamboo_withus.html">Grow Bamboo with us <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/></svg></a>
+            <a href="advisory_comittee_members.html">Advisory Committe Members <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/></svg> </a>
+            <a href="faq.html">FAQ <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/></svg></a>
+            <a href="contact.html">Contact Us <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/></svg> </a>
+          </nav> 
+          
+        
+        </div>
+
+      </div>
+
+    </div>
+  </header>
+
+
+  <script>
+    function MenuDisplayToggle() {
+      let menu = document.getElementById("Menu");
+      if (document.getElementById("Menu").style.display === "none" || document.getElementById("Menu").style.display === "") {
+        document.getElementById("Menu").style.display = "block";
+        document.getElementById("blurdiv").classList.remove("blurdiv");
+      }
+      else {
+        document.getElementById("Menu").style.display = "none";
+        document.getElementById("blurdiv").classList.add("blurdiv");
+      }
+
+    }
+  </script>
+  <!-- Green Section -->
+  <div id="green-section">
+    <div class="blurdiv" id="blurdiv">
+    <h1 class="display-4">Promoting Sustainable Bamboo Cultivation, Producing Eco-friendly bamboo Products</h1>
+      <B>
+        <!-- <p class="lead">Join us in our mission to cultivate bamboo and contribute to a sustainable future.</p> -->
+      </B>
+      <!-- <a class="btn btn-primary btn-lg" href="contact.html" role="button">Get Involved</a> -->
+
+    
+    <a  class="btn btn-primary btn-lg" href="contact.html" role="button" > <button class="ripple-btn">Get Involved</button></a> 
+
+    </div>
+  </div>
+  <br>
+  <br>
+  <!-- green section end -->
+
+  <!-- Introduction -->
+  <div class="add-section">
+    <p>Welcome to <a href=""> Arable Earth Private Limited!</a> We nurture the nature… We are thrilled to introduce <mark> Arable Earth Private Limited,</mark> a pioneering venture that stands at the intersection of tradition and technology in the world of agriculture. As we embark on this journey, our mission is to revolutionise the way we think about farming, ensuring sustainable practices, bountiful harvests and a flourishing planet for generations to come. Sowing the Seeds of Innovation in Agriculture is our aim. At Arable Earth, we envision a world where the beauty of farming is harmonised with cutting-edge techniques. Our vision is to be at the forefront of agricultural innovation, empowering farmers with the tools they need to enhance productivity, minimize environmental impact and increase profitability.</p>
+    <p><mark>We Identified Bamboo plant as a solution provided for the manu issues faced by Farmer and Global Environment</mark></p>
+    <div class="d-flex flex-row justify-content-center">
+    <a  class=" btn" href="Who we are.html" role="button" > <button class="ripple-btn">Know more about Arable Earth Private Limited</button></a> 
+ </div>
+  </div>
+    <!-- Introduction end-->
+
+  <div class="d-flex justify-content-center hero2">
+    <h2>Discover the  advantages of Bamboo</h2>
+  </div>
+
+  <!--card start-->
+  <div class="container-fluid mt-2">
+    <div class="row">
+      <div class="col-md-4 col-sm-6 item">
+        <div class="card item-card card-block roundedcards">
+          <img src="./ASSETS/es3.png" class="AdvantagesImgs" alt="Photo of environmental sustainability">
+          <h4 class="card-title m-2">Environmental sustainability</h4>
+          <p class="card-text text-sm m-2 text-center">Bamboo is a highly sustainable resource.</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 item CenterAdvantage">
+        <div class="card item-card card-block roundedcards">
+          <img src="./ASSETS/eo8.jpeg" class="AdvantagesImgs" alt="Photo of economic opportunities">
+          <h4 class="card-title m-2">Economic Opportunities</h4>
+          <p class="card-text text-sm m-2 text-center">Engage in a profitable venture with our buyback agreement.</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 item">
+        <div class="card item-card card-block roundedcards">
+          <img src="./ASSETS/va1.jpeg" class="AdvantagesImgs" alt="Photo of applications">
+          <h4 class="card-title m-2">Versatile Applications</h4>
+          <p class="card-text text-xs m-2 text-center">Renewable substitute for Fossil fuels.</p>
+        </div>
+      </div>
+
+      <div class="d-flex flex-row justify-content-end">
+        <a  class=" btn" href="Know_about_bamboo.html" role="button" > <button class="ripple-btn">Know more about Bamboo</button></a> 
+     </div>
+    </div>
+
+  </div>
+
+  <!--card end-->
+  <br>
+
+  <!-- partnership -->
+  <div class="partnership">
+    <div class="content">
+      <h1>PARTNERSHIP OPPORTUNITIES</h1>
+      <p>We welcome partnerships with individuals, communities and organizations committed to sustainable practices.
+        Together, we can make a significant impact on the environment and local economies.</p>
+    </div>
+  </div>
+  <!-- partnership end  -->
+  <br>
+  <br>
+  <!-- cultivation  -->
+  <div class="mass1">
+    <h1>Cultivation Practices</h1>
+    <p>learn about our sustainable bamboo cultivation process</p>
+  </div>
+  <div class="container7">
+    <!-- <div class="card__container1">
+      <article class="card__article1">
+        <img src="./ASSETS/Bamboo-genus-and-species.webp" alt="image" class="card__img1">
+
+        <div class="card__data1">
+
+          <h2 class="card__title1">Selection of Bamboo Species</h2>
+          <p>We carefully choose bamboo species that thrive in local conditions<br>
+            ensuring optimal growth.</p>
+        </div>
+      </article>
+      <article class="card__article1">
+        <img src="./ASSETS/regularMonitering.png" alt="image" class="card__img1">
+        <div class="card__data1">
+
+          <h2 class="card__title1">Regular Monitoring and care</h2>
+          <p>Our experts regularly monitor the bamboo plantation, providing necessary care and addressing challenges.
+          </p>
+        </div>
+      </article>
+
+      <article class="card__article1">
+        <img src="./ASSETS/ecoFriendly.png" alt="image" class="card__img1">
+
+        <div class="card__data1">
+
+          <h2 class="card__title">Eco-Friendly Farming Practices</h2>
+          <p>We prioritize eco-friendly farming methods,avoiding harmful pesticides and promoting organic practices.</p>
+        </div>
+      </article>
+
+      <article class="card__article1">
+        <img src="./ASSETS/BambooHarvest.png" alt="image" class="card__img1">
+
+        <div class="card__data1">
+
+          <h2 class="card__title">Harvesting and Buyback</h2>
+          <p>When bamboo is ready for harvest, we facilitate the process and honor our buyback agreement with farmers.
+          </p>
+        </div>
+      </article>
+
+      <article class="card__article1">
+        <img src="./ASSETS/Moso-Bamboo-Shoot-Spring_550x.webp" alt="image" class="card__img1">
+
+        <div class="card__data1">
+
+          <h2 class="card__title1">Planting Bamboo</h2>
+          <p>If using rhizome cuttings, plant them at an appropriate depth, ensuring good contact with the soil.</p>
+        </div>
+      </article>
+
+      <article class="card__article1">
+        <img
+          src="./ASSETS/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL2x1Y2t5LWJhbWJvby5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOiIxMjAwIn19fQ==.webp"
+          alt="image" class="card__img1">
+
+        <div class="card__data1">
+
+          <h2 class="card__title1">Regular Watering</h2>
+          <p>Provide consistent and adequate water to the bamboo plants, especially during the initial stages of growth.
+          </p>
+        </div>
+      </article>
+
+
+    </div> -->
+    
+    <div class="card__container1_MobileAndTab">
+
+      <article class="card__article1_MobileAndTab">
+      <div class="card__flipper">
+        <div class="card__front">
+              <div class="card__data1_MobileAndTab">
+              
+                  <img class="MobileGridImages" src="./ASSETS/Bamboo-genus-and-species.webp" alt="image">
+                  <h2  class="card__title1_MobileAndTab">Selection of Bamboo Species</h2>
+                  <p>We carefully choose bamboo species that thrive in local conditions ensuring optimal growth.</p>
+              </div>
+        </div>
+        <div class="card__back">
+          <div class="card__data1_MobileAndTab">
+
+              <p>Bambusa Balcooa, Bambusa Tulda, Bambusa Newton, Dendrocalamas Asper, Thyrsostachys Oliveri.</p>
+        </div>
+      </div>
+    </article>
+
+
+    <article class="card__article1_MobileAndTab">
+      <div class="card__flipper">
+        <div class="card__front">
+          <div class="card__data1_MobileAndTab">
+            <img class="MobileGridImages" src="./ASSETS/soilagro.jpg" alt="image" class="card__img1_MobileAndTab">
+            <h2 class="card__title_MobileAndTab">Soil and Agroclimatic conditions</h2>
+            <p>Our team will visit your farm and analyse suitability of soil and climate for the cultivation.</p> 
+          </div>
+        </div>
+            <div class="card__back">
+                <div class="card__data1_MobileAndTab">
+                  <p>Suitable for all types of soils except alkaline soils, water logging soils. It thrives almost all climatic conditions of India.</p>
+                </div>
+            </div>
+    </article>
+
+
+
+    
+<article class="card__article1_MobileAndTab">
+  <div class="card__flipper">
+    <div class="card__front">
+      <div class="card__data1_MobileAndTab">
+        <img class="MobileGridImages" src="./ASSETS/ecoFriendly.png" alt="image" class="card__img1_MobileAndTab">
+        <h2 class="card__title_MobileAndTab">Eco-Friendly Farming Practices</h2>
+        <p>We prioritize eco-friendly farming methods,avoiding harmful pesticides and promoting organic practices.</p>
+      </div>
+    </div>
+        <div class="card__back">
+            <div class="card__data1_MobileAndTab">
+              <p>We guide you to adopt sustainable farming practices.</p>
+            </div>
+        </div>
+</article>
+
+
+
+    <article class="card__article1_MobileAndTab">
+      <div class="card__flipper">
+        <div class="card__front">
+              <div class="card__data1_MobileAndTab">
+                <img class="MobileGridImages" src="./ASSETS/regularMonitering.png" alt="image" class="card__img1_MobileAndTab">
+                <h2 class="card__title1_MobileAndTab">Regular Monitoring and care</h2>
+                <p>Our experts regularly monitor the bamboo plantation, providing necessary care and addressing challenges.
+                </p>
+              </div>
+           </div>
+           <div class="card__back">
+            <div class="card__data1_MobileAndTab">
+             <p>For good growth and yield bamboo requires close observation, that we will provide.</p>
+            </div>
+           </div>
+    </article>
+
+    <article class="card__article1_MobileAndTab">
+      <div class="card__flipper">
+        <div class="card__front">
+          <div class="card__data1_MobileAndTab">
+            <img class="MobileGridImages" src="./ASSETS/harvesting.jpg" alt="image" class="card__img1_MobileAndTab">
+            <h2 class="card__title_MobileAndTab">Harvesting</h2>
+            <p>When bamboo is ready for harvest, we facilitate the process.</p>
+          </div>
+        </div>
+            <div class="card__back">
+                <div class="card__data1_MobileAndTab">
+                  <p>Intime harvesting of bamboo is a part of good cultivation practices.</p>
+                </div>
+            </div>
+    </article>
+
+    <article class="card__article1_MobileAndTab">
+      <div class="card__flipper">
+        <div class="card__front">
+          <div class="card__data1_MobileAndTab">
+            <img class="MobileGridImages" src="./ASSETS/buyback.webp" alt="image">
+            <h2 class="card__title1_MobileAndTab">Buyback</h2>
+            <p>we made payment immediately, once the Bamboo is procured.</p>
+          </div>
+        </div>
+            <div class="card__back">
+                <div class="card__data1_MobileAndTab">
+                  <p>We honour our buyback agreement with the farmer and purchase Bamboo at farm gate.</p>
+                </div>
+            </div>
+    </article>
+
+  </div>
+</div>
+</section>
+  <!-- Mobile View Content -->
+
+
+  <!-- cultivation end  -->
+
+
+
+
+
+
+  <!-- Buyback Section -->
+
+
+  <section class="about" id="ABOUT">
+    <h2 style="text-align: center;">BUY BACK OPTIONS</h2>
+    <h4> Explore our buyback options and support sustainability agriculture</h4>
+    <div class="container-fluid flex1">
+
+      <div class="left">
+        <div class="img">
+          <img src="./ASSETS/BUY_BACK_PNG_TRANSPARENT.png" alt="Nature" class="responsive">
+        </div>
+      </div>
+
+      <div class="right">
+
+        <button class="accordion" id="button1"> <label>Flexible Agreements</label> </button>
+        <div class="panel active">
+          <p>
+            our buyback agreements assures farmers to purchase bamboo at farmers farm gate. it’s an open agreement to sell to us or to anyone as per farmers choice.
+          </p>
+        </div>
+
+        <button class="accordion" id="button2">Fair Pricing </button>
+        <div class="panel">
+          <p>
+            we offer Minimum support price or market price to the bamboo at the time of purchase whichever is higher.
+          </p>
+        </div>
+
+        <button class="accordion" id="button3">Cultivation Practices</button>
+        <div class="panel">
+          <p>
+            we provide standardized bamboo cultivation practices, suitable for agroclimatic conditions of farm to have good quality yield.
+          </p>
+
+          <style>
+            .centered-button-container {
+              text-align: center;
+              margin-top: 20px;
+            }
+
+            .centered-button-container button {
+              outline: none;
+              cursor: pointer;
+              border: none;
+              padding: 0.9rem 2rem;
+              font-family: inherit;
+              font-size: inherit;
+              position: relative;
+              display: inline-block;
+              letter-spacing: 0.05rem;
+              font-weight: 700;
+              font-size: 17px;
+              border-radius: 500px;
+              overflow: hidden;
+              background: #194a19;
+              color: ghostwhite;
+            }
+          </style>
+        </div>
+      </div>
+  </section>
+  <!-- <div class="centered-button-container">
+    <button>Contact </button>
+  </div> -->
+
+
+
+  <footer>
+    <section class="footer">
+      <div class="row m-0">
+        <!-- <div class="col-12 col-md-2 footerColNone">
+
+          <div class="d-flex justify-content-center">
+              <img src="./ASSETS/final.png" class="footer-logo"></div>
+
+              <p class="ofc2">At ARABLE EARTH, we lead bamboo cultivation and eco-product innovation,
+                 fostering sustainability, community.</p>
+
+
+
+</div> -->
+        <div class="col-12 col-md-4 col-lg-3">
+          <h4>Company</h4>
+          <ul class="p-0">
+            <li><a href="our_vision.html">about Us</a></li>
+            <li><a href="invest.html">Invest in Bamboo</a></li>
+            <li><a href="about_bamboo.html">About Bamboo</a></li>
+            <li><a href="cultivate.html">Cultivate Bamboo</a></li>
+            <li><a href="contact.html">contact us</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3">
+
+          <h4>Get Help</h4>
+          <ul class="p-0">
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="founder.html">Meet The Founder</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="promote.html">Promote Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+
+
+        </div>
+
+        <div class="col-12 col-md-4 col-lg-3">
+          <h4>Address</h4>
+          <p class="adrs"> Office address :<br> Arable Earth private Limited<br>
+            G-02-03, Ground Floor, Shangrila Plaza, Banjara Hills
+            <br>Road no-2, Hyderabad - 500034.
+
+          </p>
+        </div>
+
+        <div class="col-12 col-md-12 col-lg-3 p-2">
+          <div class="social-links">
+            <a href="https://youtube.com/@ARABLEEARTHPVTLTD?si=dNsqFv1y-ZSAzpbf" target="_blank"><i
+                class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/arableearthpvtltd/?utm_source=qr&igsh=MXIweHBxaG93cWs0YQ%3D%3D"
+              target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/arable-earth-pvt-ltd/about/" target="_blank"><i
+                class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/i/flow/login" target="_blank"><i class="fab fa-twitter"></i></a>
+          </div>
+
+        </div>
+      </div>
+
+      <hr>
+      <p class="copyrights">© ARABLEEARTH 2023.All Rights Reserved.</p>
+
+    </section>
+  </footer>
+
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- <script src="./JAVASCRIPT/scrollerhome.js"></script> -->
+
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        var panel = this.nextElementSibling;
+
+        // Close other open panels
+        for (var j = 0; j < acc.length; j++) {
+          if (acc[j] !== this) {
+            acc[j].classList.remove("active");
+            acc[j].nextElementSibling.style.display = "none";
+          }
+        }
+
+        // Toggle current panel
+        this.classList.toggle("active");
+
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+
+          // Scroll to the first paragraph in the panel
+          var firstParagraph = panel.querySelector("p");
+          if (firstParagraph) {
+            firstParagraph.scrollIntoView({ behavior: "smooth" });
+          }
+        }
+      });
+    }
+
+    // Add event listener to close panel when clicking anywhere on the screen
+    document.body.addEventListener("click", function (e) {
+      // Check if the clicked element is not an accordion button or panel
+      if (!e.target.matches('.accordion, .panel')) {
+        // Close all open panels
+        for (var j = 0; j < acc.length; j++) {
+          acc[j].classList.remove("active");
+          acc[j].nextElementSibling.style.display = "none";
+        }
+      }
+    });
+  </script>
+  <script>
+
+    var imageno = 1;
+    displayimg(imageno);
+
+    function nextimg(n) {
+      displayimg(imageno += n)
+    }
+
+    function currentSlide(n) {
+      displayimg(imageno = n)
+    }
+
+    function displayimg(n) {
+      var i;
+      var image = document.getElementsByClassName("slideimage");
+      var dots = document.getElementsByClassName("dot");
+
+      if (n > image.length) {
+        imageno = 1;
+      }
+
+      if (n < 1) {
+        imageno = image.length;
+      }
+
+      for (i = 0; i < image.length; i++) {
+        image[i].style.display = "none";
+      }
+
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+
+      image[imageno - 1].style.display = "block";
+      dots[imageno - 1].className += " active";
+
+    }
+
+  </script>
+
+</body>
+
+</html>

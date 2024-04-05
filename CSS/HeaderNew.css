@@ -1,0 +1,262 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*Header CSS*/
+.header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+}
+.IndexLogo{
+  height:150px !important;
+  width:100% !important;
+}
+
+.separatorImg {
+  height: 20px;
+  float: right;
+  width: auto !important;
+}
+
+.lastSeparator {
+  display: none;
+}
+
+.head>div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.middle h1 {
+  color: #762e11;
+  font-style: italic;
+  font-family: cursive;
+  margin: 0;
+  font-size: 40px;
+}
+
+.SubNavBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 1%;
+  background-color: #64ab41;
+}
+.CultivateAnchor{
+  width:13% !important;
+}
+.HomeAnchor{
+  width:7% !important;
+}
+.SubNavBar a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  width: 10%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.SubNavBar a:hover {
+  text-decoration: underline #762e11;
+}
+
+.greenspan {
+  color: #64ab41;
+}
+
+.menuButton {
+  display: none;
+  background-color: #64ab41;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  position: relative;
+}
+.header_navbar{
+  width:100%;
+  position: relative;
+}
+.menuButton:hover{
+  border-radius: 0px !important;
+  font-weight: normal !important;
+}
+
+
+@media screen and (max-width:550px) and (min-width:250px) {
+  .menuButton {
+    display: block;
+    z-index: 1;
+    width: 100%;
+    font-size: 16px;
+  }
+  .IndexLogo{
+    height:100px !important;
+    width:75% !important;
+  }
+
+  .fa-close {
+    display: block !important;
+  }
+
+  .header_bottom {
+    display: none;
+  }
+
+  .SubNavBar {
+    row-gap: 10px;
+    position: absolute;
+    top: 67%;
+    right: 0;
+    z-index: 2;
+    width: 100%;
+    font-size: 14px;
+    flex-direction: column;
+    border-top: solid 2px #762e11;
+    padding: 0;
+  }
+
+  .SubNavBar a {
+    padding: 7px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100% !important;
+  }
+
+  .header_top {
+    width: 30%
+  }
+
+  .header_top {
+    text-align: left;
+    width:100%;
+  }
+
+  .middle {
+    text-align: center;
+    width: 100%;
+  }
+
+  .middle h1 {
+    font-size: 34px;
+  }
+
+  .social-links-header2 {
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+
+  }
+
+  .lastSeparator {
+    display: block;
+  }
+
+}
+
+@media screen and (max-width:990px) and (min-width:551px) {
+  .menuButton {
+    display: block;
+    z-index: 1;
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .fa-close {
+    display: block !important;
+  }
+
+  .header_bottom {
+    display: none;
+    row-gap: 10px;
+    position: absolute;
+    top: 67%;
+    right: 0;
+    z-index: 2;
+    width: 100%;
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-top: solid 2px #762e11;
+    padding: 0;
+  }
+
+  .SubNavBar {
+    row-gap: 10px;
+    position: absolute;
+    top: 67%;
+    right: 0;
+    z-index: 2;
+    width: 100%;
+    font-size: 14px;
+    flex-direction: column;
+    border-top: solid 2px #762e11;
+    padding: 0;
+  }
+  .SubNavBar a {
+    padding: 7px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100% !important;
+  }
+
+  .lastSeparator {
+    display: block;
+  }
+
+  .middle {
+    text-align: right;
+    width: 100%;
+    padding-right: 10px;
+  }
+
+
+  .social-links-header2 {
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+
+  }
+
+  .header_top {
+    width: 30%
+  }
+
+  .header_top {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width:1500px) and (min-width:851px) {
+  .header_top img {
+    width: 75px;
+    height: 75px;
+    padding: 0;
+  }
+
+  .SubNavBar {
+    padding: 4px 10px;
+  }
+
+  .SubNavBar a {
+    text-align: left;
+    width: auto;
+    font-size: small;
+  }
+
+  .separatorImg {
+    margin-left: 5px;
+  }
+}
+

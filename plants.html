@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faq Page</title>
+
+
+    <link rel="stylesheet" href="./CSS/faq.css">
+    <link rel="stylesheet" href="./CSS/bambooheader.css">
+    <script src="./JAVASCRIPT/Home.js"></script>
+
+
+    <!--     
+    <link rel="stylesheet" href="./CSS/faq.css">
+    <link rel="stylesheet" href="./CSS/bambooheader.css">
+    <link rel="stylesheet" href="./CSS/bamboofooter.css">
+   
+    <script src="./JAVASCRIPT/Home.js"></script> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="icon" href="./ASSETS/icon_final.png" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/HeaderNew.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+            <div class="header_top middle">
+                <img class="IndexLogo" src="./ASSETS/AELOGO_FINAL.png" alt="Logo" />
+            </div>
+            <div class="header_navbar">
+                <button class="menuButton" onclick="MenuDisplayToggle()" id="menuButton">Menu <i
+                        class="fa-solid fa-caret-down"></i></button>
+                <div class="header_bottom" id="Menu">
+                    <nav class="SubNavBar">
+                        <a class="HomeAnchor" href="index.html">Home <svg xmlns="http://www.w3.org/2000/svg" width="25"
+                                height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                            </svg></a>
+                        <a class="CultivateAnchor" href="cultivate.html">Cultivate bamboo <svg
+                                xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="bi bi-dot" viewBox="0 0 16 16">
+                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                            </svg> </a>
+                        <a href="founder.html">Founders <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                            </svg> </a>
+                        <a href="invest.html">Invest Bamboo <svg xmlns="http://www.w3.org/2000/svg" width="25"
+                                height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                            </svg> </a>
+                        <a href="faq.html">Know More <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                            </svg></a>
+                        <a href="our_vision.html">Our Vision <svg xmlns="http://www.w3.org/2000/svg" width="25"
+                                height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                            </svg></a>
+                        <a href="about_bamboo.html">About Bamboo <svg xmlns="http://www.w3.org/2000/svg" width="25"
+                                height="25" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                            </svg></a>
+                        <a href="promote.html">Promote Us <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                            </svg> </a>
+                        <a href="blog.html">Our Products <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                            </svg></a>
+                        <a href="contact.html">Contact Us <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                            </svg> </a>
+                    </nav>
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+
+    <script>
+        function MenuDisplayToggle() {
+            let menu = document.getElementById("Menu");
+            if (document.getElementById("Menu").style.display === "none" || document.getElementById("Menu").style.display === "") {
+                document.getElementById("Menu").style.display = "block";
+            }
+            else {
+                document.getElementById("Menu").style.display = "none";
+            }
+
+        }
+    </script>
+
+
+    <section class="header2">
+
+        <div class="row m-0">
+            <div class="col-md-12 headerlines p-0 pb-5">
+                <h1>Bamboo Plant Faq's</h1>
+                <h5>Most Frequently Asked Questions?</h5>
+                <h5>Answers to most frequently asked questions about bamboo plants...!</h5>
+
+                <div class="boxhead">
+                    <div class="boxes">
+                        <div class="row m-0">
+                            <div class="col-12 p-0">
+                                <a href="faq.html" class="hero-btn">Know more</a>
+                                <a href="plants.html" class="hero-btn">Plants</a>
+                                <a href="garden.html" class="hero-btn">Garden</a>
+                                <a href="products.html" class="hero-btn">Products</a>
+                                <a href="contact.html" class="hero-btn">Contact Us</a>
+                                <a class="hero-btn1" href="ASSETS\News Letter 1 Aug23 copy.pdf" target="_blank">For More
+                                    Click Here
+                                    for Download1</a>
+                                <a class="hero-btn1" href="\ASSETS\Newsletter 2 Nov23.pdf" target="_blank">For More
+                                    Click Here
+                                    for Download2</a>
+                                <a class="hero-btn1" href="\ASSETS\NEWSLETTER_3_jan08.pdf" target="_blank">For More
+                                    Click Here
+                                    for Download3</a>
+
+                                <a class="hero-btn1" href="\ASSETS\WE ARE AEPL.pdf" target="_blank">For More Click Here
+                                    for Download4</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+    <section>
+        <div class="faq">
+            <div class="row m-0">
+                <div class="col-md-8 p-0">
+                    <div class="question">
+                        <h4>How deep should I plant bamboo?</h4>
+
+                        <svg width="15" height="10" viewBox="0 0 42 25">
+                            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="answer">
+                <div class="row m-0">
+                    <div class="col-md-9">
+                        <div class="content">
+                            <p>Bamboo should be planted at a depth where the root mass is covered with soil.
+                                Typically, this might be around 1-2 inches deep for small potted bamboo plants
+                                and a bit deeper for larger specimens.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="image">
+                            <img src="./ASSETS/bamboo-roots.webp">
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+
+        <div class="faq">
+            <div class="row m-0">
+                <div class="col-md-8 p-0">
+                    <div class="question">
+                        <h4>What kind of soil is best for planting bamboo?</h4>
+                        <svg width="15" height="10" viewBox="0 0 42 25">
+                            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                        </svg>
+
+                    </div>
+                </div>
+            </div>
+            <div class="answer">
+                <div class="row m-0">
+                    <div class="col-md-9">
+                        <div class="content">
+                            <p>Bamboo prefers well-draining soil rich in organic matter.
+                                A slightly acidic to neutral soil pH is ideal. Adding compost
+                                or aged manure can improve soil fertility and texture for better
+                                bamboo grow m-0th.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="image">
+                            <img src="./ASSETS/soil.jpg">
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="faq">
+            <div class="row m-0">
+                <div class="col-md-8 p-0">
+                    <div class="question">
+                        <h4>How much sunlight does bamboo need?</h4>
+
+                        <svg width="15" height="10" viewBox="0 0 42 25">
+                            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="answer">
+                <div class="row m-0">
+                    <div class="col-md-9">
+                        <div class="content">
+                            <p>Most bamboo species thrive in full sun to partial shade. However,
+                                specific light requirements can vary depending on the species.
+                                Some bamboo varieties tolerate shade better than others.</p>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="image">
+                            <img src="./ASSETS/bamboo-sun.jpg">
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="faq">
+            <div class="row m-0">
+                <div class="col-md-8 p-0">
+                    <div class="question">
+                        <h4>How far apart should I space bamboo plants when planting?</h4>
+
+                        <svg width="15" height="10" viewBox="0 0 42 25">
+                            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="answer">
+                <div class="row m-0">
+                    <div class="col-md-9">
+                        <div class="content">
+                            <p>Spacing between bamboo plants depends on the species and its grow m-0th habit.
+                                Clumping bamboo species generally require around 3 to 5 feet of space between plants,
+                                while running bamboo species may need more space (10 to 20 feet) to prevent them from
+                                spreading aggressively.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="image">
+                            <img src="./ASSETS/Bamboo-gaptogap.jpg">
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="faq">
+            <div class="row m-0">
+                <div class="col-md-8 p-0">
+                    <div class="question">
+                        <h4>Do bamboo plants require a lot of water?</h4>
+
+                        <svg width="15" height="10" viewBox="0 0 42 25">
+                            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="answer">
+                <div class="row m-0">
+                    <div class="col-md-9">
+                        <div class="content">
+                            <p>Newly planted bamboo should be watered regularly to establish their root systems.
+                                Once established, bamboo is generally drought-tolerant. However, regular watering
+                                during dry spells can promote healthier grow m-0th.</p>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="image">
+                            <img src="./ASSETS/water_bamboo.jpg">
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="row m-0">
+                <div class="col-md-8 p-0">
+                    <div class="question">
+                        <h4>How fast does bamboo grow m-0?</h4>
+
+                        <svg width="15" height="10" viewBox="0 0 42 25">
+                            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="answer">
+                <div class="row m-0">
+                    <div class="col-md-9">
+                        <div class="content">
+                            <p>Bamboo is known for its rapid grow m-0th. Some species can grow m-0 several feet in a
+                                single
+                                grow m-0ing season, while others might have slower grow m-0th rates. The grow m-0th rate
+                                can also
+                                vary based on environmental conditions and care.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="image">
+                            <img src="./ASSETS/bamboo-tall.webp">
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="faq">
+            <div class="row m-0">
+                <div class="col-md-8 p-0">
+                    <div class="question">
+                        <h4>How do I prevent the bamboo from spreading uncontrollably?</h4>
+
+                        <svg width="15" height="10" viewBox="0 0 42 25">
+                            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="answer">
+                <div class="row m-0">
+                    <div class="col-md-9">
+                        <div class="content">
+                            <p>Running bamboo species have a reputation for spreading vigorously. To control their
+                                spread, consider planting them in containers, installing a rhizome barrier
+                                (a physical barrier that prevents roots from spreading), or regular maintenance by
+                                cutting
+                                off new shoots beyond the desired boundary.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="image">
+                            <img src="./ASSETS/preventing_bamboo_spread.webp">
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- Footer -->
+
+    <footer>
+        <section class="footer">
+            <div class="row m-0">
+                <!-- <div class="col-12 col-md-2 footerColNone">
+    
+            <div class="d-flex justify-content-center">
+            <img src="./ASSETS/final.png" class="footer-logo"></div>
+    
+            <p class="ofc2">At ARABLE EARTH, we lead bamboo cultivation and eco-product innovation,
+               fostering sustainability, community.</p>
+    
+    
+    
+        </div> -->
+                <div class="col-12 col-md-4 col-lg-3">
+                    <h4 class="p-0">Company</h4>
+                    <ul class="p-0">
+                        <li><a href="our_vision.html">about Us</a></li>
+                        <li><a href="invest.html">Invest in Bamboo</a></li>
+                        <li><a href="about_bamboo.html">About Bamboo</a></li>
+                        <li><a href="cultivate.html">Cultivate Bamboo</a></li>
+                        <li><a href="contact.html">contact us</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <h4 class="p-0">Get Help</h4>
+                    <ul class="p-0">
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="founder.html">Meet The Founder</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="promote.html">Promote Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+
+
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3">
+                    <h4 class="p-0">Address</h4>
+                    <p class="adrs p-0"> Office address :<br> Arable Earth private Limited
+                        G-02-03, Ground Floor, Shangrila Plaza, Banjara Hills
+                        <br>Road no-2, Hyderabad - 500034<br><br><br>
+
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-3 p-2">
+
+                    <div class="social-links">
+                        <a href="https://youtube.com/@ARABLEEARTHPVTLTD?si=dNsqFv1y-ZSAzpbf" target="_blank"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/arableearthpvtltd/?utm_source=qr&igsh=MXIweHBxaG93cWs0YQ%3D%3D"
+                            target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/arable-earth-pvt-ltd/about/" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/i/flow/login" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+
+                </div>
+            </div>
+
+            <hr>
+            <p class="copyrights">© ARABLEEARTH 2023.All Rights Reserved.</p>
+
+        </section>
+    </footer>
+
+    <!-- FOOTER END -->
+
+
+
+    <script src="./JAVASCRIPT/faq.js"></script>
+</body>
+
+</html>
